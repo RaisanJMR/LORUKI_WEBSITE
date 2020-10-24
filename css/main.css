@@ -35,56 +35,7 @@ p {
 img {
    width: 100%;
 }
-/*==========
-   utilities
- ============ */
-.container {
-   max-width: 1100px;
-   margin: 0 auto;
-   overflow: auto;
-   padding: 0 40px;
-}
-.flex {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-}
-.grid {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-gap: 20px;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-}
-.card {
-   background: #fff;
-   border-radius: 10px;
-   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-   padding: 20px;
-   margin: 10px;
-   color: #333;
-}
-.btn {
-   display: inline-block;
-   padding: 10px 30px;
-   cursor: pointer;
-   background: var(--primary-color);
-   border: none;
-   color: #fff;
-   border-radius: 5px;
-}
-.btn-outline {
-   transition: all 0.1s ease-in;
-   background: transparent;
-   border: 1px solid #fff;
-}
-.btn-outline:hover {
-   background: #fff;
-   border: 1px solid #fff;
-   color: var(--primary-color);
-}
+
 /*=============
      navbar
  ============ */
@@ -167,4 +118,21 @@ img {
 }
 .showcase-form input:focus {
    outline: none;
+}
+/* ===========
+    stats
+============== */
+.stats {
+   padding-top: 100px;
+}
+.stats-heading {
+   max-width: 500px;
+   margin: auto;
+}
+.stats .grid h3 {
+   font-size: 45px;
+}
+.stats .grid p {
+   font-size: 20px;
+   font-weight: bold;
 }
