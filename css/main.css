@@ -1,4 +1,9 @@
-/* general reset */
+:root {
+   --primary-color: #047aed;
+}
+/*==============
+  general reset 
+ ===============*/
 * {
    box-sizing: border-box;
    margin: 0;
@@ -30,7 +35,59 @@ p {
 img {
    width: 100%;
 }
-/* navbar */
+/*==========
+   utilities
+ ============ */
+.container {
+   max-width: 1100px;
+   margin: 0 auto;
+   overflow: auto;
+   padding: 0 40px;
+}
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.card {
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+   padding: 20px;
+   margin: 10px;
+   color: #333;
+}
+.btn {
+   display: inline-block;
+   padding: 10px 30px;
+   cursor: pointer;
+   background: var(--primary-color);
+   border: none;
+   color: #fff;
+   border-radius: 5px;
+}
+.btn-outline {
+   transition: all 0.1s ease-in;
+   background: transparent;
+   border: 1px solid #fff;
+}
+.btn-outline:hover {
+   background: #fff;
+   border: 1px solid #fff;
+   color: var(--primary-color);
+}
+/*=============
+     navbar
+ ============ */
 .navbar .logo {
    font-family: 'Parisienne', cursive;
    letter-spacing: 2px;
@@ -38,7 +95,7 @@ img {
    margin: 10px 0;
 }
 .navbar {
-   background: #047aed;
+   background: var(--primary-color);
    color: #ffffff;
    height: 70px;
 }
@@ -56,15 +113,58 @@ img {
 .navbar .flex {
    justify-content: space-between;
 }
-.container {
-   max-width: 1100px;
-   margin: 0 auto;
-   overflow: auto;
-   padding: 0 40px;
+/* showcase */
+.showcase {
+   height: 400px;
+   background: var(--primary-color);
+   color: #fff;
+   position: relative;
 }
-.flex {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
+.showcase::before,
+.showcase::after {
+   content: '';
+   position: absolute;
+   height: 100px;
+   bottom: -70px;
+   right: 0;
+   left: 0;
+   background: #fff;
+   transform: skewY(-3deg);
+   -webkit-transform: skewY(-3deg);
+   -mos-transform: skewY(-3deg);
+   -mz-transform: skewY(-3deg);
+}
+.showcase h1 {
+   font-size: 40px;
+}
+.showcase p {
+   margin: 20px 0;
+}
+.showcase .grid {
+   overflow: visible;
+   grid-template-columns: 55% 45%;
+   gap: 30px;
+}
+.showcase-form {
+   position: relative;
+   top: 60px;
+   height: 350px;
+   width: 400px;
+   padding: 40px;
+   z-index: 100;
+   justify-self: flex-end;
+}
+.showcase-form .form-control {
+   margin: 30px 0;
+}
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+   border: 0;
+   border-bottom: 1px solid #b4becb;
+   width: 80%;
+   padding: 3px;
+   font-size: 16px;
+}
+.showcase-form input:focus {
+   outline: none;
 }
