@@ -42,6 +42,10 @@
    color: #fff;
    border-radius: 5px;
 }
+.btn-primary {
+   background: var(--dark-color);
+   color: #fff;
+}
 .btn-outline {
    transition: all 0.1s ease-in;
    background: transparent;
@@ -50,11 +54,10 @@
 .btn-outline:hover {
    background: #fff;
    border: 1px solid #fff;
-   color: var(--primary-color);
+   color: var(--dark-color);
 }
 /* backgrounds and coloured buttons */
-.bg-primary,
-.btn-primary {
+.bg-primary {
    background: var(--primary-color);
    color: #fff;
 }
@@ -71,7 +74,7 @@
 .bg-light,
 .btn-light {
    background: var(--light-color);
-   color: #333;
+   color: #333333;
 }
 .bg-primary a,
 .btn-primary a,
@@ -80,6 +83,19 @@
 .bg-dark a,
 .btn-dark a {
    color: #fff;
+}
+/* text-colors */
+.text-primary {
+   color: var(--primary-color);
+}
+.text-secondary {
+   color: var(--secondary-color);
+}
+.text-dark {
+   color: var(--dark-color);
+}
+.text-light {
+   color: var(--light-color);
 }
 /* text sizes */
 .lead {
@@ -99,6 +115,24 @@
 }
 .grid-3 {
    grid-template-columns: repeat(3, 1fr);
+}
+/* alert */
+.alert {
+   background: var(--light-color);
+   padding: 10px 20px;
+   font-weight: bold;
+   margin: 15px 0;
+}
+.alert i {
+   margin-right: 10px;
+}
+.alert-success {
+   background: var(--success-color);
+   color: #fff;
+}
+.alert-error {
+   background: var(--error-color);
+   color: #fff;
 }
 /* margin */
 .my-1 {

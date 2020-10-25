@@ -21,48 +21,52 @@
 </head>
 
 <body>
+    <header>
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="logo">Loruki.</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- navbar ends -->
+        <!-- showcase -->
+        <section class="showcase">
+            <div class="container grid">
+                <div class="showcase-text">
+                    <h1>Easier Deployment</h1>
+                    <p>Choose Loruki for the same reasons disruptive startups do: it’s the best platform for building
+                        with
+                        modern
+                        architectures, innovating quickly, and scaling precisely to meet demand. Fill out the form and
+                        try a
+                        demo of our platform.</p>
+                    <a href="features.html" class="btn btn-outline">Read More</a>
+                </div>
+                <div class="showcase-form card">
+                    <h2>Request a Demo</h2>
+                    <form>
+                        <div class="form-control">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="company" placeholder="Company Name">
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <input type="submit" value="send" class="btn btn-dark">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
     <!-- navbar -->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">Loruki.</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="docs.html">Docs</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!-- navbar ends -->
-    <!-- showcase -->
-    <section class="showcase">
-        <div class="container grid">
-            <div class="showcase-text">
-                <h1>Easier Deployment</h1>
-                <p>Choose Loruki for the same reasons disruptive startups do: it’s the best platform for building with
-                    modern
-                    architectures, innovating quickly, and scaling precisely to meet demand. Fill out the form and try a
-                    demo of our platform.</p>
-                <a href="features.html" class="btn btn-outline">Read More</a>
-            </div>
-            <div class="showcase-form card">
-                <h2>Request a Demo</h2>
-                <form>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name">
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="send" class="btn btn-primary">
-                </form>
-            </div>
-        </div>
-    </section>
     <!-- stats -->
     <section class="stats">
         <div class="container">
@@ -73,20 +77,20 @@
             </h3>
 
             <div class="grid grid-3 text-center my-4">
-                <div>
-                    <i class="fas fa-server fa-3x"></i>
+                <div class="stats-card">
+                    <i class="fas fa-server fa-5x"></i>
                     <h2>10,125,448</h2>
-                    <p class="text-secondary">Deployments</p>
+                    <p>Deployments</p>
                 </div>
-                <div>
-                    <i class="fas fa-upload fa-3x"></i>
+                <div class="stats-card">
+                    <i class="fas fa-upload fa-5x"></i>
                     <h2>10,125 TB</h2>
-                    <p class="text-secondary">Published</p>
+                    <p>Published</p>
                 </div>
-                <div>
-                    <i class="fas fa-project-diagram fa-3x"></i>
+                <div class="stats-card">
+                    <i class="fas fa-project-diagram fa-5x"></i>
                     <h2>40,589,111</h2>
-                    <p class="text-secondary">Projects</p>
+                    <p>Projects</p>
                 </div>
             </div>
         </div>
@@ -176,6 +180,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
