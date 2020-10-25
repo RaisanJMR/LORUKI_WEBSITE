@@ -1,0 +1,3 @@
+<h1>LORUKI CLOUD HOSTING PLATFORM</h1>
+<h3>this is a simple website using :-</h3>
+-HTML5, CSS3, CSS ANIMATION, FLEXBOX, GRID, NO FRAMEWORKUSED
