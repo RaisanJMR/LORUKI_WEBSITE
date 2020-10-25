@@ -45,7 +45,10 @@ p {
 img {
    width: 100%;
 }
-
+.hidden {
+   visibility: hidden;
+   height: 0;
+}
 /*=============
      navbar
  ============ */
@@ -282,7 +285,6 @@ header {
 .footer .social a > i:hover {
    background: var(--light-color);
    color: var(--dark-color);
-   
 }
 /* code pre */
 code,
